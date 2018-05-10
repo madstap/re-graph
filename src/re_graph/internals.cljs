@@ -123,6 +123,7 @@
  (fn [[ws]]
    (.close ws)))
 
+#_
 (defn default-ws-url []
   (let [host-and-port (.-host js/window.location)
         ssl? (re-find #"^https" (.-origin js/window.location))]

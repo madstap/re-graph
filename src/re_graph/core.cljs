@@ -102,7 +102,7 @@
 (re-frame/reg-event-fx
  ::init
  (fn [{:keys [db]} [_ {:keys [ws-url http-url http-parameters ws-reconnect-timeout resume-subscriptions? connection-init-payload]
-                       :or {ws-url (internals/default-ws-url)
+                       :or {;; ws-url (internals/default-ws-url)
                             http-parameters {}
                             http-url "/graphql"
                             ws-reconnect-timeout 5000
